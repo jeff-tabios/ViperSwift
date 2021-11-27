@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,18 +14,19 @@
 		BE88CF92275207BE0031A888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE88CF91275207BE0031A888 /* Assets.xcassets */; };
 		BE88CF95275207BE0031A888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE88CF93275207BE0031A888 /* LaunchScreen.storyboard */; };
 		BE88CFA0275207BE0031A888 /* ViperSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CF9F275207BE0031A888 /* ViperSwiftTests.swift */; };
-		BE88CFAB275207BE0031A888 /* ViperSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFAA275207BE0031A888 /* ViperSwiftUITests.swift */; };
+		BE88CFBD2752082C0031A888 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFB92752082C0031A888 /* APIService.swift */; };
+		BE88CFBE2752082C0031A888 /* mock_pizzaList_GET.json in Resources */ = {isa = PBXBuildFile; fileRef = BE88CFBB2752082C0031A888 /* mock_pizzaList_GET.json */; };
+		BE88CFBF2752082C0031A888 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFBC2752082C0031A888 /* MockURLProtocol.swift */; };
+		BE88CFC22752085B0031A888 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = BE88CFC12752085B0031A888 /* ObjectMapper */; };
+		BE88CFD027520A080031A888 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BE88CFCF27520A080031A888 /* RxCocoa */; };
+		BE88CFD227520A080031A888 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BE88CFD127520A080031A888 /* RxSwift */; };
+		BE88CFD527520A7E0031A888 /* Pizzas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFD427520A7E0031A888 /* Pizzas.swift */; };
+		BE88CFD827520C4E0031A888 /* PizzasService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFD727520C4E0031A888 /* PizzasService.swift */; };
+		BE88CFDA27520D470031A888 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFD927520D470031A888 /* Endpoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		BE88CF9C275207BE0031A888 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE88CF7D275207BD0031A888 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BE88CF84275207BD0031A888;
-			remoteInfo = ViperSwift;
-		};
-		BE88CFA7275207BE0031A888 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BE88CF7D275207BD0031A888 /* Project object */;
 			proxyType = 1;
@@ -46,9 +47,12 @@
 		BE88CF9B275207BE0031A888 /* ViperSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE88CF9F275207BE0031A888 /* ViperSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperSwiftTests.swift; sourceTree = "<group>"; };
 		BE88CFA1275207BE0031A888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE88CFA6275207BE0031A888 /* ViperSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE88CFAA275207BE0031A888 /* ViperSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperSwiftUITests.swift; sourceTree = "<group>"; };
-		BE88CFAC275207BE0031A888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE88CFB92752082C0031A888 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		BE88CFBB2752082C0031A888 /* mock_pizzaList_GET.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_pizzaList_GET.json; sourceTree = "<group>"; };
+		BE88CFBC2752082C0031A888 /* MockURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		BE88CFD427520A7E0031A888 /* Pizzas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizzas.swift; sourceTree = "<group>"; };
+		BE88CFD727520C4E0031A888 /* PizzasService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzasService.swift; sourceTree = "<group>"; };
+		BE88CFD927520D470031A888 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,17 +60,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE88CFD227520A080031A888 /* RxSwift in Frameworks */,
+				BE88CFD027520A080031A888 /* RxCocoa in Frameworks */,
+				BE88CFC22752085B0031A888 /* ObjectMapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BE88CF98275207BE0031A888 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE88CFA3275207BE0031A888 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,7 +81,6 @@
 			children = (
 				BE88CF87275207BD0031A888 /* ViperSwift */,
 				BE88CF9E275207BE0031A888 /* ViperSwiftTests */,
-				BE88CFA9275207BE0031A888 /* ViperSwiftUITests */,
 				BE88CF86275207BD0031A888 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +90,6 @@
 			children = (
 				BE88CF85275207BD0031A888 /* ViperSwift.app */,
 				BE88CF9B275207BE0031A888 /* ViperSwiftTests.xctest */,
-				BE88CFA6275207BE0031A888 /* ViperSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +97,9 @@
 		BE88CF87275207BD0031A888 /* ViperSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BE88CFD627520C300031A888 /* Services */,
+				BE88CFD327520A680031A888 /* Entities */,
+				BE88CFB82752082C0031A888 /* Network */,
 				BE88CF88275207BD0031A888 /* AppDelegate.swift */,
 				BE88CF8A275207BD0031A888 /* SceneDelegate.swift */,
 				BE88CF8C275207BD0031A888 /* ViewController.swift */,
@@ -119,13 +120,39 @@
 			path = ViperSwiftTests;
 			sourceTree = "<group>";
 		};
-		BE88CFA9275207BE0031A888 /* ViperSwiftUITests */ = {
+		BE88CFB82752082C0031A888 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				BE88CFAA275207BE0031A888 /* ViperSwiftUITests.swift */,
-				BE88CFAC275207BE0031A888 /* Info.plist */,
+				BE88CFD927520D470031A888 /* Endpoints.swift */,
+				BE88CFB92752082C0031A888 /* APIService.swift */,
+				BE88CFBA2752082C0031A888 /* Mock */,
+				BE88CFBC2752082C0031A888 /* MockURLProtocol.swift */,
 			);
-			path = ViperSwiftUITests;
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BE88CFBA2752082C0031A888 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				BE88CFBB2752082C0031A888 /* mock_pizzaList_GET.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		BE88CFD327520A680031A888 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BE88CFD427520A7E0031A888 /* Pizzas.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BE88CFD627520C300031A888 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE88CFD727520C4E0031A888 /* PizzasService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +171,11 @@
 			dependencies = (
 			);
 			name = ViperSwift;
+			packageProductDependencies = (
+				BE88CFC12752085B0031A888 /* ObjectMapper */,
+				BE88CFCF27520A080031A888 /* RxCocoa */,
+				BE88CFD127520A080031A888 /* RxSwift */,
+			);
 			productName = ViperSwift;
 			productReference = BE88CF85275207BD0031A888 /* ViperSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -166,24 +198,6 @@
 			productReference = BE88CF9B275207BE0031A888 /* ViperSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BE88CFA5275207BE0031A888 /* ViperSwiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BE88CFB5275207BE0031A888 /* Build configuration list for PBXNativeTarget "ViperSwiftUITests" */;
-			buildPhases = (
-				BE88CFA2275207BE0031A888 /* Sources */,
-				BE88CFA3275207BE0031A888 /* Frameworks */,
-				BE88CFA4275207BE0031A888 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BE88CFA8275207BE0031A888 /* PBXTargetDependency */,
-			);
-			name = ViperSwiftUITests;
-			productName = ViperSwiftUITests;
-			productReference = BE88CFA6275207BE0031A888 /* ViperSwiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +214,6 @@
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = BE88CF84275207BD0031A888;
 					};
-					BE88CFA5275207BE0031A888 = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = BE88CF84275207BD0031A888;
-					};
 				};
 			};
 			buildConfigurationList = BE88CF80275207BD0031A888 /* Build configuration list for PBXProject "ViperSwift" */;
@@ -215,13 +225,16 @@
 				Base,
 			);
 			mainGroup = BE88CF7C275207BD0031A888;
+			packageReferences = (
+				BE88CFC02752085B0031A888 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				BE88CFCE27520A080031A888 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = BE88CF86275207BD0031A888 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BE88CF84275207BD0031A888 /* ViperSwift */,
 				BE88CF9A275207BE0031A888 /* ViperSwiftTests */,
-				BE88CFA5275207BE0031A888 /* ViperSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,19 +245,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE88CF95275207BE0031A888 /* LaunchScreen.storyboard in Resources */,
+				BE88CFBE2752082C0031A888 /* mock_pizzaList_GET.json in Resources */,
 				BE88CF92275207BE0031A888 /* Assets.xcassets in Resources */,
 				BE88CF90275207BD0031A888 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BE88CF99275207BE0031A888 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE88CFA4275207BE0031A888 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,6 +267,11 @@
 			files = (
 				BE88CF8D275207BD0031A888 /* ViewController.swift in Sources */,
 				BE88CF89275207BD0031A888 /* AppDelegate.swift in Sources */,
+				BE88CFBF2752082C0031A888 /* MockURLProtocol.swift in Sources */,
+				BE88CFBD2752082C0031A888 /* APIService.swift in Sources */,
+				BE88CFD827520C4E0031A888 /* PizzasService.swift in Sources */,
+				BE88CFD527520A7E0031A888 /* Pizzas.swift in Sources */,
+				BE88CFDA27520D470031A888 /* Endpoints.swift in Sources */,
 				BE88CF8B275207BD0031A888 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,14 +284,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE88CFA2275207BE0031A888 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE88CFAB275207BE0031A888 /* ViperSwiftUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -287,11 +291,6 @@
 			isa = PBXTargetDependency;
 			target = BE88CF84275207BD0031A888 /* ViperSwift */;
 			targetProxy = BE88CF9C275207BE0031A888 /* PBXContainerItemProxy */;
-		};
-		BE88CFA8275207BE0031A888 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BE88CF84275207BD0031A888 /* ViperSwift */;
-			targetProxy = BE88CFA7275207BE0031A888 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,44 +508,6 @@
 			};
 			name = Release;
 		};
-		BE88CFB6275207BE0031A888 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ViperSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = jefftabios.ViperSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ViperSwift;
-			};
-			name = Debug;
-		};
-		BE88CFB7275207BE0031A888 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ViperSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = jefftabios.ViperSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ViperSwift;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -577,16 +538,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE88CFB5275207BE0031A888 /* Build configuration list for PBXNativeTarget "ViperSwiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE88CFB6275207BE0031A888 /* Debug */,
-				BE88CFB7275207BE0031A888 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE88CFC02752085B0031A888 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		BE88CFCE27520A080031A888 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE88CFC12752085B0031A888 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE88CFC02752085B0031A888 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		BE88CFCF27520A080031A888 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE88CFCE27520A080031A888 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		BE88CFD127520A080031A888 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE88CFCE27520A080031A888 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BE88CF7D275207BD0031A888 /* Project object */;
 }
