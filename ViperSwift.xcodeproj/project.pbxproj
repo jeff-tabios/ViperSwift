@@ -139,9 +139,9 @@
 		BE88CF87275207BD0031A888 /* ViperSwift */ = {
 			isa = PBXGroup;
 			children = (
-				BE88D00A2753E0A80031A888 /* Helpers */,
 				BE88CFE12753116F0031A888 /* Modules */,
 				BE88CFD327520A680031A888 /* Entities */,
+				BE88D00A2753E0A80031A888 /* Helpers */,
 				BE88CFFF275399370031A888 /* Extensions */,
 				BE88CFD627520C300031A888 /* Services */,
 				BE88CFB82752082C0031A888 /* Network */,

@@ -31,7 +31,6 @@ final class MainView: UIViewController {
     lazy var cartButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(named: "cartIcon"), for: .normal)
-        button.addTarget(self, action: #selector(didTouchUpInsideCartButton(_:)), for: .touchUpInside)
         button.layer.cornerRadius = 24
         button.setTitleColor(.white, for: .normal)
 
@@ -42,6 +41,13 @@ final class MainView: UIViewController {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.cornerRadius = 10
+        return view
+    }()
+    
+    lazy var containerHandle: UIView = {
+        let view = UIView()
+        view.backgroundColor = .lightGray
+        view.layer.cornerRadius = 5
         return view
     }()
     
@@ -63,10 +69,6 @@ final class MainView: UIViewController {
         return label
     }()
     
-    @objc func didTouchUpInsideCartButton(_ button: UIButton) {
-        print("toCart")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
@@ -76,6 +78,10 @@ final class MainView: UIViewController {
     }
     
     func bind() {
+        cartButton.rx.tap.asDriver()
+            .drive(presenter!.cartButtonTappedTrigger)
+            .disposed(by: disposeBag)
+        
         presenter?.slides
             .subscribe(onNext: { [weak self] slides in
                 self?.slideshow.reload(slides: slides.slides)
@@ -103,6 +109,7 @@ final class MainView: UIViewController {
     func addSubviews() {
         view.addSubview(slideshow)
         view.addSubview(containerView)
+        containerView.addSubview(containerHandle)
         containerView.addSubview(menu)
         
         view.addSubview(cartButton)
@@ -123,6 +130,13 @@ final class MainView: UIViewController {
             make.height.equalTo(defaultHeight)
         }
         
+        containerHandle.snp.remakeConstraints { make in
+            make.width.equalTo(80)
+            make.height.equalTo(10)
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().offset(20)
+        }
+        
         menu.snp.remakeConstraints { make in
             make.leading.trailing.bottom.equalToSuperview()
             make.top.equalToSuperview().offset(40)
@@ -135,8 +149,8 @@ final class MainView: UIViewController {
         
         cartCountView.snp.remakeConstraints { make in
             make.width.height.equalTo(20)
-            make.top.equalTo(cartButton)
-            make.trailing.equalTo(cartButton)
+            make.top.equalTo(cartButton).offset(-7)
+            make.trailing.equalTo(cartButton).offset(7)
         }
         
         cartCount.snp.remakeConstraints { make in
