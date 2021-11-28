@@ -71,7 +71,8 @@ extension Menu: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MenuCell = tableView.dequeueCellAtIndexPath(indexPath: indexPath)
         
-        if let id = pizzas?[indexPath.row].id,
+        if let pizza = pizzas?[indexPath.row],
+           let id = pizzas?[indexPath.row].id,
            let image = pizzas?[indexPath.row].image,
            let title = pizzas?[indexPath.row].name,
            let price = pizzas?[indexPath.row].price {
@@ -81,6 +82,7 @@ extension Menu: UITableViewDataSource {
             cell.price.text = "\(price)"
             cell.price.sizeToFit()
             cell.addButton.tag = id
+            cell.pizza = pizza
         }
         
         return cell

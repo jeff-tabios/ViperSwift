@@ -13,10 +13,10 @@ final class CartManager {
     
     var addTrigger = PublishSubject<Void>()
     
-    var pizzasIds: [Int] = []
+    var pizzas: [Pizza] = []
     
-    func addToCart(id: Int) {
-            pizzasIds.append(id)
+    func addToCart(pizza: Pizza) {
+            pizzas.append(pizza)
             addTrigger.onNext(())
     }
 }

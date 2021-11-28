@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class MenuCell: UITableViewCell {
+    var pizza: Pizza?
     
     lazy var container: UIView = {
         let view = UIView()
@@ -55,7 +56,9 @@ class MenuCell: UITableViewCell {
     }()
     
     @objc func didTouchUpInsideAddButton(_ button: UIButton) {
-        CartManager.shared.addToCart(id: button.tag)
+        if let pizza = pizza {
+            CartManager.shared.addToCart(pizza: pizza)
+        }
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

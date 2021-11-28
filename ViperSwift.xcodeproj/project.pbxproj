@@ -43,6 +43,7 @@
 		BE88D0122753E7920031A888 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D0112753E7920031A888 /* CartView.swift */; };
 		BE88D0142753E7C40031A888 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D0132753E7C40031A888 /* CartPresenter.swift */; };
 		BE88D0162753E7D40031A888 /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D0152753E7D40031A888 /* CartInteractor.swift */; };
+		BE88D0182753E9CC0031A888 /* MainView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D0172753E9CC0031A888 /* MainView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		BE88D0112753E7920031A888 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		BE88D0132753E7C40031A888 /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
 		BE88D0152753E7D40031A888 /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
+		BE88D0172753E9CC0031A888 /* MainView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				BE88CFF12753174A0031A888 /* MainView.swift */,
 				BE88CFEF2753172F0031A888 /* MainPresenter.swift */,
 				BE88CFF3275317560031A888 /* MainInteractor.swift */,
+				BE88D0172753E9CC0031A888 /* MainView+.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				BE88CFD827520C4E0031A888 /* MenuService.swift in Sources */,
 				BE88CFD527520A7E0031A888 /* Products.swift in Sources */,
 				BE88D005275399A80031A888 /* UITableView+.swift in Sources */,
+				BE88D0182753E9CC0031A888 /* MainView+.swift in Sources */,
 				BE88D00F2753E7710031A888 /* CartRouter.swift in Sources */,
 				BE88D0092753CA700031A888 /* MenuCell.swift in Sources */,
 				BE88D0072753CA020031A888 /* Menu.swift in Sources */,
