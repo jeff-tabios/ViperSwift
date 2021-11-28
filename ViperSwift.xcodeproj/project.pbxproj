@@ -26,6 +26,14 @@
 		BE88CFDC275223C20031A888 /* Slides.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFDB275223C20031A888 /* Slides.swift */; };
 		BE88CFDE275306C40031A888 /* mock_slides_GET.json in Resources */ = {isa = PBXBuildFile; fileRef = BE88CFDD275306C40031A888 /* mock_slides_GET.json */; };
 		BE88CFE0275309480031A888 /* SlidesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFDF275309480031A888 /* SlidesService.swift */; };
+		BE88CFE5275311D20031A888 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFE4275311D20031A888 /* ListRouter.swift */; };
+		BE88CFE7275311E10031A888 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFE6275311E10031A888 /* ListInteractor.swift */; };
+		BE88CFE9275311EE0031A888 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFE8275311EE0031A888 /* ListPresenter.swift */; };
+		BE88CFEB275312010031A888 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFEA275312010031A888 /* ListViewController.swift */; };
+		BE88CFEE275317250031A888 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFED275317250031A888 /* MainRouter.swift */; };
+		BE88CFF02753172F0031A888 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFEF2753172F0031A888 /* MainPresenter.swift */; };
+		BE88CFF22753174A0031A888 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFF12753174A0031A888 /* MainView.swift */; };
+		BE88CFF4275317560031A888 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFF3275317560031A888 /* MainInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +67,14 @@
 		BE88CFDB275223C20031A888 /* Slides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slides.swift; sourceTree = "<group>"; };
 		BE88CFDD275306C40031A888 /* mock_slides_GET.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_slides_GET.json; sourceTree = "<group>"; };
 		BE88CFDF275309480031A888 /* SlidesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidesService.swift; sourceTree = "<group>"; };
+		BE88CFE4275311D20031A888 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		BE88CFE6275311E10031A888 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		BE88CFE8275311EE0031A888 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		BE88CFEA275312010031A888 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		BE88CFED275317250031A888 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		BE88CFEF2753172F0031A888 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		BE88CFF12753174A0031A888 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BE88CFF3275317560031A888 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +119,7 @@
 		BE88CF87275207BD0031A888 /* ViperSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BE88CFE12753116F0031A888 /* Modules */,
 				BE88CFD327520A680031A888 /* Entities */,
 				BE88CFD627520C300031A888 /* Services */,
 				BE88CFB82752082C0031A888 /* Network */,
@@ -162,6 +179,37 @@
 				BE88CFD727520C4E0031A888 /* PizzasService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BE88CFE12753116F0031A888 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BE88CFEC2753170F0031A888 /* Main */,
+				BE88CFE22753117E0031A888 /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BE88CFE22753117E0031A888 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BE88CFE4275311D20031A888 /* ListRouter.swift */,
+				BE88CFEA275312010031A888 /* ListViewController.swift */,
+				BE88CFE8275311EE0031A888 /* ListPresenter.swift */,
+				BE88CFE6275311E10031A888 /* ListInteractor.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		BE88CFEC2753170F0031A888 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BE88CFED275317250031A888 /* MainRouter.swift */,
+				BE88CFF12753174A0031A888 /* MainView.swift */,
+				BE88CFEF2753172F0031A888 /* MainPresenter.swift */,
+				BE88CFF3275317560031A888 /* MainInteractor.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,10 +327,18 @@
 				BE88CF89275207BD0031A888 /* AppDelegate.swift in Sources */,
 				BE88CFBF2752082C0031A888 /* MockURLProtocol.swift in Sources */,
 				BE88CFBD2752082C0031A888 /* APIService.swift in Sources */,
+				BE88CFE5275311D20031A888 /* ListRouter.swift in Sources */,
+				BE88CFF4275317560031A888 /* MainInteractor.swift in Sources */,
+				BE88CFEE275317250031A888 /* MainRouter.swift in Sources */,
 				BE88CFDC275223C20031A888 /* Slides.swift in Sources */,
+				BE88CFEB275312010031A888 /* ListViewController.swift in Sources */,
+				BE88CFE7275311E10031A888 /* ListInteractor.swift in Sources */,
 				BE88CFD827520C4E0031A888 /* PizzasService.swift in Sources */,
 				BE88CFD527520A7E0031A888 /* Pizzas.swift in Sources */,
+				BE88CFF22753174A0031A888 /* MainView.swift in Sources */,
+				BE88CFF02753172F0031A888 /* MainPresenter.swift in Sources */,
 				BE88CFDA27520D470031A888 /* Endpoints.swift in Sources */,
+				BE88CFE9275311EE0031A888 /* ListPresenter.swift in Sources */,
 				BE88CFE0275309480031A888 /* SlidesService.swift in Sources */,
 				BE88CF8B275207BD0031A888 /* SceneDelegate.swift in Sources */,
 			);
