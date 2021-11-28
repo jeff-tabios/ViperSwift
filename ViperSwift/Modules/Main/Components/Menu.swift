@@ -58,12 +58,7 @@ class Menu: UIView {
     }
 }
 
-extension Menu: UITableViewDelegate {
-
-
-}
-
-extension Menu: UITableViewDataSource {
+extension Menu: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         pizzas?.count ?? 0
     }

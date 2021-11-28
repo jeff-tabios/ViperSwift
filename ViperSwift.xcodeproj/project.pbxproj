@@ -44,6 +44,7 @@
 		BE88D0142753E7C40031A888 /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D0132753E7C40031A888 /* CartPresenter.swift */; };
 		BE88D0162753E7D40031A888 /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D0152753E7D40031A888 /* CartInteractor.swift */; };
 		BE88D0182753E9CC0031A888 /* MainView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D0172753E9CC0031A888 /* MainView+.swift */; };
+		BE88D01B2753F83A0031A888 /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D01A2753F83A0031A888 /* CartItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		BE88D0132753E7C40031A888 /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
 		BE88D0152753E7D40031A888 /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
 		BE88D0172753E9CC0031A888 /* MainView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+.swift"; sourceTree = "<group>"; };
+		BE88D01A2753F83A0031A888 /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,12 +259,21 @@
 		BE88D00D2753E75D0031A888 /* Cart */ = {
 			isa = PBXGroup;
 			children = (
+				BE88D0192753F8210031A888 /* Components */,
 				BE88D00E2753E7710031A888 /* CartRouter.swift */,
 				BE88D0112753E7920031A888 /* CartView.swift */,
 				BE88D0132753E7C40031A888 /* CartPresenter.swift */,
 				BE88D0152753E7D40031A888 /* CartInteractor.swift */,
 			);
 			path = Cart;
+			sourceTree = "<group>";
+		};
+		BE88D0192753F8210031A888 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BE88D01A2753F83A0031A888 /* CartItemCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +407,7 @@
 				BE88CFD827520C4E0031A888 /* MenuService.swift in Sources */,
 				BE88CFD527520A7E0031A888 /* Products.swift in Sources */,
 				BE88D005275399A80031A888 /* UITableView+.swift in Sources */,
+				BE88D01B2753F83A0031A888 /* CartItemCell.swift in Sources */,
 				BE88D0182753E9CC0031A888 /* MainView+.swift in Sources */,
 				BE88D00F2753E7710031A888 /* CartRouter.swift in Sources */,
 				BE88D0092753CA700031A888 /* MenuCell.swift in Sources */,
