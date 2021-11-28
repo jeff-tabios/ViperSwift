@@ -1,0 +1,84 @@
+{
+    "pizzas": [
+        {
+          "id": 1,
+          "name": "Margherita",
+          "price": 8.75,
+          "image": "magerhita"
+        },
+        {
+          "id": 2,
+          "name": "Hawaiian",
+          "price": 7.50,
+          "image": "hawaiian"
+        },
+        {
+          "id": 3,
+          "name": "Italian",
+          "price": 9.75,
+          "image": "italian"
+        },
+        {
+          "id": 4,
+          "name": "Manhattan",
+          "price": 8.75,
+          "image": "manhattan"
+        },
+        {
+          "id": 5,
+          "name": "Pesto Chicken",
+          "price": 8.75,
+          "image": "pestoChicken"
+        },
+        {
+          "id": 6,
+          "name": "Tuffled Mushroom",
+          "price": 8.75,
+          "image": "tuffledMushroom"
+        },
+        {
+          "id": 7,
+          "name": "Vegan",
+          "price": 8.75,
+          "image": "vegan"
+        },
+        {
+          "id": 8,
+          "name": "Veggie Deluxe",
+          "price": 8.75,
+          "image": "veggieDeluxe"
+        }
+    ],
+    "sushi": [
+        {
+          "id": 1,
+          "name": "Margherita",
+          "price": 8.75,
+          "image": "magerhita"
+        },
+        {
+          "id": 2,
+          "name": "Hawaiian",
+          "price": 7.50,
+          "image": "hawaiian"
+        },
+        {
+          "id": 3,
+          "name": "Italian",
+          "price": 9.75,
+          "image": "italian"
+        },
+        {
+          "id": 4,
+          "name": "Manhattan",
+          "price": 8.75,
+          "image": "manhattan"
+        },
+        {
+          "id": 5,
+          "name": "Pesto Chicken",
+          "price": 8.75,
+          "image": "pestoChicken"
+        }
+    ]
+}

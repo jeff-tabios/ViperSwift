@@ -13,9 +13,9 @@ class MainRouter {
         let vc = MainView()
         
         let slidesService = SlidesService()
-        let pizzasService = PizzasService()
+        let pizzasService = MenuService()
         
-        let interactor = MainInteractor(slidesService: slidesService, pizzasService: pizzasService)
+        let interactor = MainInteractor(slidesService: slidesService, menuService: pizzasService)
         let presenter = MainPresenter(interactor: interactor, router: self)
         
         vc.presenter = presenter

@@ -9,7 +9,7 @@ import Foundation
 
 enum StoreAPI: String {
     case slides = "http://someDomain.com/slides"
-    case pizzas = "http://someDomain.com/pizzaList"
+    case menu = "http://someDomain.com/menu"
     
     var endpoint: String {
         self.rawValue

@@ -15,25 +15,29 @@
 		BE88CF95275207BE0031A888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE88CF93275207BE0031A888 /* LaunchScreen.storyboard */; };
 		BE88CFA0275207BE0031A888 /* ViperSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CF9F275207BE0031A888 /* ViperSwiftTests.swift */; };
 		BE88CFBD2752082C0031A888 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFB92752082C0031A888 /* APIService.swift */; };
-		BE88CFBE2752082C0031A888 /* mock_pizzaList_GET.json in Resources */ = {isa = PBXBuildFile; fileRef = BE88CFBB2752082C0031A888 /* mock_pizzaList_GET.json */; };
+		BE88CFBE2752082C0031A888 /* mock_menu_GET.json in Resources */ = {isa = PBXBuildFile; fileRef = BE88CFBB2752082C0031A888 /* mock_menu_GET.json */; };
 		BE88CFBF2752082C0031A888 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFBC2752082C0031A888 /* MockURLProtocol.swift */; };
 		BE88CFC22752085B0031A888 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = BE88CFC12752085B0031A888 /* ObjectMapper */; };
 		BE88CFD027520A080031A888 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BE88CFCF27520A080031A888 /* RxCocoa */; };
 		BE88CFD227520A080031A888 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BE88CFD127520A080031A888 /* RxSwift */; };
-		BE88CFD527520A7E0031A888 /* Pizzas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFD427520A7E0031A888 /* Pizzas.swift */; };
-		BE88CFD827520C4E0031A888 /* PizzasService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFD727520C4E0031A888 /* PizzasService.swift */; };
+		BE88CFD527520A7E0031A888 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFD427520A7E0031A888 /* Products.swift */; };
+		BE88CFD827520C4E0031A888 /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFD727520C4E0031A888 /* MenuService.swift */; };
 		BE88CFDA27520D470031A888 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFD927520D470031A888 /* Endpoints.swift */; };
 		BE88CFDC275223C20031A888 /* Slides.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFDB275223C20031A888 /* Slides.swift */; };
 		BE88CFDE275306C40031A888 /* mock_slides_GET.json in Resources */ = {isa = PBXBuildFile; fileRef = BE88CFDD275306C40031A888 /* mock_slides_GET.json */; };
 		BE88CFE0275309480031A888 /* SlidesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFDF275309480031A888 /* SlidesService.swift */; };
-		BE88CFE5275311D20031A888 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFE4275311D20031A888 /* ListRouter.swift */; };
-		BE88CFE7275311E10031A888 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFE6275311E10031A888 /* ListInteractor.swift */; };
-		BE88CFE9275311EE0031A888 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFE8275311EE0031A888 /* ListPresenter.swift */; };
-		BE88CFEB275312010031A888 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFEA275312010031A888 /* ListViewController.swift */; };
 		BE88CFEE275317250031A888 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFED275317250031A888 /* MainRouter.swift */; };
 		BE88CFF02753172F0031A888 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFEF2753172F0031A888 /* MainPresenter.swift */; };
 		BE88CFF22753174A0031A888 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFF12753174A0031A888 /* MainView.swift */; };
 		BE88CFF4275317560031A888 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFF3275317560031A888 /* MainInteractor.swift */; };
+		BE88CFF7275362F70031A888 /* Slideshow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFF6275362F70031A888 /* Slideshow.swift */; };
+		BE88CFFC27538CB60031A888 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BE88CFFB27538CB60031A888 /* SnapKit */; };
+		BE88CFFE275397E70031A888 /* SlideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFFD275397E70031A888 /* SlideCell.swift */; };
+		BE88D001275399440031A888 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D000275399440031A888 /* UIView+.swift */; };
+		BE88D0032753997B0031A888 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D0022753997B0031A888 /* UICollectionView+.swift */; };
+		BE88D005275399A80031A888 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D004275399A80031A888 /* UITableView+.swift */; };
+		BE88D0072753CA020031A888 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D0062753CA020031A888 /* Menu.swift */; };
+		BE88D0092753CA700031A888 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88D0082753CA700031A888 /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,22 +63,25 @@
 		BE88CF9F275207BE0031A888 /* ViperSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperSwiftTests.swift; sourceTree = "<group>"; };
 		BE88CFA1275207BE0031A888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE88CFB92752082C0031A888 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		BE88CFBB2752082C0031A888 /* mock_pizzaList_GET.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_pizzaList_GET.json; sourceTree = "<group>"; };
+		BE88CFBB2752082C0031A888 /* mock_menu_GET.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_menu_GET.json; sourceTree = "<group>"; };
 		BE88CFBC2752082C0031A888 /* MockURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
-		BE88CFD427520A7E0031A888 /* Pizzas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizzas.swift; sourceTree = "<group>"; };
-		BE88CFD727520C4E0031A888 /* PizzasService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzasService.swift; sourceTree = "<group>"; };
+		BE88CFD427520A7E0031A888 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		BE88CFD727520C4E0031A888 /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
 		BE88CFD927520D470031A888 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		BE88CFDB275223C20031A888 /* Slides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slides.swift; sourceTree = "<group>"; };
 		BE88CFDD275306C40031A888 /* mock_slides_GET.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_slides_GET.json; sourceTree = "<group>"; };
 		BE88CFDF275309480031A888 /* SlidesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidesService.swift; sourceTree = "<group>"; };
-		BE88CFE4275311D20031A888 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
-		BE88CFE6275311E10031A888 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
-		BE88CFE8275311EE0031A888 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
-		BE88CFEA275312010031A888 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		BE88CFED275317250031A888 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		BE88CFEF2753172F0031A888 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		BE88CFF12753174A0031A888 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BE88CFF3275317560031A888 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		BE88CFF6275362F70031A888 /* Slideshow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slideshow.swift; sourceTree = "<group>"; };
+		BE88CFFD275397E70031A888 /* SlideCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCell.swift; sourceTree = "<group>"; };
+		BE88D000275399440031A888 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		BE88D0022753997B0031A888 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		BE88D004275399A80031A888 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		BE88D0062753CA020031A888 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		BE88D0082753CA700031A888 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE88CFD227520A080031A888 /* RxSwift in Frameworks */,
+				BE88CFFC27538CB60031A888 /* SnapKit in Frameworks */,
 				BE88CFD027520A080031A888 /* RxCocoa in Frameworks */,
 				BE88CFC22752085B0031A888 /* ObjectMapper in Frameworks */,
 			);
@@ -119,6 +127,7 @@
 		BE88CF87275207BD0031A888 /* ViperSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BE88CFFF275399370031A888 /* Extensions */,
 				BE88CFE12753116F0031A888 /* Modules */,
 				BE88CFD327520A680031A888 /* Entities */,
 				BE88CFD627520C300031A888 /* Services */,
@@ -157,7 +166,7 @@
 		BE88CFBA2752082C0031A888 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				BE88CFBB2752082C0031A888 /* mock_pizzaList_GET.json */,
+				BE88CFBB2752082C0031A888 /* mock_menu_GET.json */,
 				BE88CFDD275306C40031A888 /* mock_slides_GET.json */,
 			);
 			path = Mock;
@@ -166,7 +175,7 @@
 		BE88CFD327520A680031A888 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				BE88CFD427520A7E0031A888 /* Pizzas.swift */,
+				BE88CFD427520A7E0031A888 /* Products.swift */,
 				BE88CFDB275223C20031A888 /* Slides.swift */,
 			);
 			path = Entities;
@@ -176,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				BE88CFDF275309480031A888 /* SlidesService.swift */,
-				BE88CFD727520C4E0031A888 /* PizzasService.swift */,
+				BE88CFD727520C4E0031A888 /* MenuService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -185,31 +194,41 @@
 			isa = PBXGroup;
 			children = (
 				BE88CFEC2753170F0031A888 /* Main */,
-				BE88CFE22753117E0031A888 /* List */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		BE88CFE22753117E0031A888 /* List */ = {
-			isa = PBXGroup;
-			children = (
-				BE88CFE4275311D20031A888 /* ListRouter.swift */,
-				BE88CFEA275312010031A888 /* ListViewController.swift */,
-				BE88CFE8275311EE0031A888 /* ListPresenter.swift */,
-				BE88CFE6275311E10031A888 /* ListInteractor.swift */,
-			);
-			path = List;
 			sourceTree = "<group>";
 		};
 		BE88CFEC2753170F0031A888 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				BE88CFF5275362C80031A888 /* Components */,
 				BE88CFED275317250031A888 /* MainRouter.swift */,
 				BE88CFF12753174A0031A888 /* MainView.swift */,
 				BE88CFEF2753172F0031A888 /* MainPresenter.swift */,
 				BE88CFF3275317560031A888 /* MainInteractor.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		BE88CFF5275362C80031A888 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BE88CFF6275362F70031A888 /* Slideshow.swift */,
+				BE88CFFD275397E70031A888 /* SlideCell.swift */,
+				BE88D0062753CA020031A888 /* Menu.swift */,
+				BE88D0082753CA700031A888 /* MenuCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BE88CFFF275399370031A888 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE88D000275399440031A888 /* UIView+.swift */,
+				BE88D0022753997B0031A888 /* UICollectionView+.swift */,
+				BE88D004275399A80031A888 /* UITableView+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +251,7 @@
 				BE88CFC12752085B0031A888 /* ObjectMapper */,
 				BE88CFCF27520A080031A888 /* RxCocoa */,
 				BE88CFD127520A080031A888 /* RxSwift */,
+				BE88CFFB27538CB60031A888 /* SnapKit */,
 			);
 			productName = ViperSwift;
 			productReference = BE88CF85275207BD0031A888 /* ViperSwift.app */;
@@ -285,6 +305,7 @@
 			packageReferences = (
 				BE88CFC02752085B0031A888 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				BE88CFCE27520A080031A888 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				BE88CFFA27538CB60031A888 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = BE88CF86275207BD0031A888 /* Products */;
 			projectDirPath = "";
@@ -303,7 +324,7 @@
 			files = (
 				BE88CF95275207BE0031A888 /* LaunchScreen.storyboard in Resources */,
 				BE88CFDE275306C40031A888 /* mock_slides_GET.json in Resources */,
-				BE88CFBE2752082C0031A888 /* mock_pizzaList_GET.json in Resources */,
+				BE88CFBE2752082C0031A888 /* mock_menu_GET.json in Resources */,
 				BE88CF92275207BE0031A888 /* Assets.xcassets in Resources */,
 				BE88CF90275207BD0031A888 /* Main.storyboard in Resources */,
 			);
@@ -326,19 +347,22 @@
 				BE88CF8D275207BD0031A888 /* ViewController.swift in Sources */,
 				BE88CF89275207BD0031A888 /* AppDelegate.swift in Sources */,
 				BE88CFBF2752082C0031A888 /* MockURLProtocol.swift in Sources */,
+				BE88CFFE275397E70031A888 /* SlideCell.swift in Sources */,
+				BE88CFF7275362F70031A888 /* Slideshow.swift in Sources */,
+				BE88D0032753997B0031A888 /* UICollectionView+.swift in Sources */,
 				BE88CFBD2752082C0031A888 /* APIService.swift in Sources */,
-				BE88CFE5275311D20031A888 /* ListRouter.swift in Sources */,
+				BE88D001275399440031A888 /* UIView+.swift in Sources */,
 				BE88CFF4275317560031A888 /* MainInteractor.swift in Sources */,
 				BE88CFEE275317250031A888 /* MainRouter.swift in Sources */,
 				BE88CFDC275223C20031A888 /* Slides.swift in Sources */,
-				BE88CFEB275312010031A888 /* ListViewController.swift in Sources */,
-				BE88CFE7275311E10031A888 /* ListInteractor.swift in Sources */,
-				BE88CFD827520C4E0031A888 /* PizzasService.swift in Sources */,
-				BE88CFD527520A7E0031A888 /* Pizzas.swift in Sources */,
+				BE88CFD827520C4E0031A888 /* MenuService.swift in Sources */,
+				BE88CFD527520A7E0031A888 /* Products.swift in Sources */,
+				BE88D005275399A80031A888 /* UITableView+.swift in Sources */,
+				BE88D0092753CA700031A888 /* MenuCell.swift in Sources */,
+				BE88D0072753CA020031A888 /* Menu.swift in Sources */,
 				BE88CFF22753174A0031A888 /* MainView.swift in Sources */,
 				BE88CFF02753172F0031A888 /* MainPresenter.swift in Sources */,
 				BE88CFDA27520D470031A888 /* Endpoints.swift in Sources */,
-				BE88CFE9275311EE0031A888 /* ListPresenter.swift in Sources */,
 				BE88CFE0275309480031A888 /* SlidesService.swift in Sources */,
 				BE88CF8B275207BD0031A888 /* SceneDelegate.swift in Sources */,
 			);
@@ -625,6 +649,14 @@
 				minimumVersion = 6.2.0;
 			};
 		};
+		BE88CFFA27538CB60031A888 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -642,6 +674,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BE88CFCE27520A080031A888 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		BE88CFFB27538CB60031A888 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE88CFFA27538CB60031A888 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

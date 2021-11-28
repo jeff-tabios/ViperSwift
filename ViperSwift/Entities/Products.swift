@@ -11,6 +11,7 @@ import ObjectMapper
 struct Products: Mappable {
     
     var pizzas: [Pizza]?
+    var sushi: [Sushi]?
     
     init?(map: Map) {
         
@@ -18,12 +19,13 @@ struct Products: Mappable {
     
     mutating func mapping(map: Map) {
         pizzas  <- map["pizzas"]
+        sushi  <- map["sushi"]
     }
 }
 
 struct Pizza: Mappable {
     var id: Int?
-    var pizzaName: String?
+    var name: String?
     var price: Double?
     var image: String?
     
@@ -33,7 +35,25 @@ struct Pizza: Mappable {
 
     mutating func mapping(map: Map) {
         id          <- map["id"]
-        pizzaName   <- map["pizzaName"]
+        name        <- map["name"]
+        price       <- map["price"]
+        image       <- map["image"]
+    }
+}
+
+struct Sushi: Mappable {
+    var id: Int?
+    var name: String?
+    var price: Double?
+    var image: String?
+    
+    init?(map: Map) {
+
+    }
+
+    mutating func mapping(map: Map) {
+        id          <- map["id"]
+        name        <- map["name"]
         price       <- map["price"]
         image       <- map["image"]
     }

@@ -12,39 +12,22 @@ import RxCocoa
 final class MainInteractor {
     let disposeBag = DisposeBag()
     var slidesService: SlidesServiceProtocol
-    var pizzasService: PizzasServiceProtocol
+    var menuService: MenuServiceProtocol
     
     let slides = PublishSubject<Slides>()
-    let pizzas = PublishSubject<Pizzas>()
+    let menu = PublishSubject<Products>()
     var getContentTrigger = PublishSubject<Void>()
     
-    init(slidesService: SlidesServiceProtocol, pizzasService: PizzasServiceProtocol) {
+    init(slidesService: SlidesServiceProtocol, menuService: MenuServiceProtocol) {
         self.slidesService = slidesService
-        self.pizzasService = pizzasService
+        self.menuService = menuService
         
         getContentTrigger.asObservable()
-            .withLatestFrom(slidesService.getSlides())
-            .bind(to: slides)
-            .disposed(by: disposeBag)
-        
-        getContentTrigger.asObservable()
-            .withLatestFrom(pizzasService.getPizza())
-            .bind(to: pizzas)
-            .disposed(by: disposeBag)
-    }
-    
-    func getSlides() {
-        slidesService.getSlides()
-            .subscribe(onNext: { slides in
-                print(slides)
-            }, onCompleted: nil, onDisposed: nil)
-            .disposed(by: disposeBag)    }
-    
-    func getPizzas() {
-        pizzasService.getPizza()
-            .subscribe(onNext: { pizzas in
-                print(pizzas)
-            }, onCompleted: nil, onDisposed: nil)
+            .withLatestFrom(Observable.combineLatest(slidesService.getSlides(), menuService.getMenu()))
+            .subscribe(onNext: { [weak self] slides, products in
+                self?.slides.onNext(slides)
+                self?.menu.onNext(products)
+            })
             .disposed(by: disposeBag)
     }
 }

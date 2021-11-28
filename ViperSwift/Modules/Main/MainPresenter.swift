@@ -15,7 +15,7 @@ final class MainPresenter {
     var interactor: MainInteractor?
     
     let slides = PublishSubject<Slides>()
-    let pizzas = PublishSubject<Pizzas>()
+    let menu = PublishSubject<Products>()
     
     let viewLoadedTrigger = PublishSubject<Void>()
     
@@ -31,8 +31,8 @@ final class MainPresenter {
             .bind(to: slides)
             .disposed(by: disposeBag)
         
-        interactor.pizzas.asObservable()
-            .bind(to: pizzas)
+        interactor.menu.asObservable()
+            .bind(to: menu)
             .disposed(by: disposeBag)
         
     }

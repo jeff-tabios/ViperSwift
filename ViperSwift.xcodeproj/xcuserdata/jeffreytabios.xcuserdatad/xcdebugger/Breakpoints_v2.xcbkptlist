@@ -3,4 +3,54 @@
    uuid = "AC6ECA8A-18AF-484C-BF25-EE316AD44778"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFAEBB64-5BB2-4792-9B1B-7E3CAE9A41C3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperSwift/Modules/Main/Components/BottomSheet.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "updateConstraints()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EFAEBB64-5BB2-4792-9B1B-7E3CAE9A41C3 - ead063541064202c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperSwift.BottomSheet.updateConstraints() -&gt; ()"
+                  moduleName = "ViperSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffreytabios/Documents/GitHub/ViperSwift/ViperSwift/Modules/Main/Components/BottomSheet.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "EFAEBB64-5BB2-4792-9B1B-7E3CAE9A41C3 - e829ba3e4c7e6ded"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SnapKit.ConstraintMaker) -&gt; () in ViperSwift.BottomSheet.updateConstraints() -&gt; ()"
+                  moduleName = "ViperSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffreytabios/Documents/GitHub/ViperSwift/ViperSwift/Modules/Main/Components/BottomSheet.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -13,10 +13,10 @@ class ViperSwiftTests: XCTestCase {
 
     func test_pizzasServiceShouldReturnPizzas() {
         let disposeBag = DisposeBag()
-        let sut = PizzasService()
+        let sut = MenuService()
         
         let exp = expectation(description: "get pizzas")
-        sut.getPizza()
+        sut.getMenu()
             .subscribe(onNext: { pizzas in
                 print(pizzas)
                 XCTAssert(pizzas.pizzas?.count == 8)
