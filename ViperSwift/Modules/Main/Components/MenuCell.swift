@@ -55,7 +55,7 @@ class MenuCell: UITableViewCell {
     }()
     
     @objc func didTouchUpInsideAddButton(_ button: UIButton) {
-        print(button.tag)
+        CartManager.shared.addToCart(id: button.tag)
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
