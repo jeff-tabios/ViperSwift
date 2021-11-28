@@ -23,6 +23,9 @@
 		BE88CFD527520A7E0031A888 /* Pizzas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFD427520A7E0031A888 /* Pizzas.swift */; };
 		BE88CFD827520C4E0031A888 /* PizzasService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFD727520C4E0031A888 /* PizzasService.swift */; };
 		BE88CFDA27520D470031A888 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFD927520D470031A888 /* Endpoints.swift */; };
+		BE88CFDC275223C20031A888 /* Slides.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFDB275223C20031A888 /* Slides.swift */; };
+		BE88CFDE275306C40031A888 /* mock_slides_GET.json in Resources */ = {isa = PBXBuildFile; fileRef = BE88CFDD275306C40031A888 /* mock_slides_GET.json */; };
+		BE88CFE0275309480031A888 /* SlidesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88CFDF275309480031A888 /* SlidesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		BE88CFD427520A7E0031A888 /* Pizzas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizzas.swift; sourceTree = "<group>"; };
 		BE88CFD727520C4E0031A888 /* PizzasService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzasService.swift; sourceTree = "<group>"; };
 		BE88CFD927520D470031A888 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		BE88CFDB275223C20031A888 /* Slides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slides.swift; sourceTree = "<group>"; };
+		BE88CFDD275306C40031A888 /* mock_slides_GET.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_slides_GET.json; sourceTree = "<group>"; };
+		BE88CFDF275309480031A888 /* SlidesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,8 @@
 		BE88CF87275207BD0031A888 /* ViperSwift */ = {
 			isa = PBXGroup;
 			children = (
-				BE88CFD627520C300031A888 /* Services */,
 				BE88CFD327520A680031A888 /* Entities */,
+				BE88CFD627520C300031A888 /* Services */,
 				BE88CFB82752082C0031A888 /* Network */,
 				BE88CF88275207BD0031A888 /* AppDelegate.swift */,
 				BE88CF8A275207BD0031A888 /* SceneDelegate.swift */,
@@ -125,8 +131,8 @@
 			children = (
 				BE88CFD927520D470031A888 /* Endpoints.swift */,
 				BE88CFB92752082C0031A888 /* APIService.swift */,
-				BE88CFBA2752082C0031A888 /* Mock */,
 				BE88CFBC2752082C0031A888 /* MockURLProtocol.swift */,
+				BE88CFBA2752082C0031A888 /* Mock */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -135,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				BE88CFBB2752082C0031A888 /* mock_pizzaList_GET.json */,
+				BE88CFDD275306C40031A888 /* mock_slides_GET.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				BE88CFD427520A7E0031A888 /* Pizzas.swift */,
+				BE88CFDB275223C20031A888 /* Slides.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 		BE88CFD627520C300031A888 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BE88CFDF275309480031A888 /* SlidesService.swift */,
 				BE88CFD727520C4E0031A888 /* PizzasService.swift */,
 			);
 			path = Services;
@@ -245,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE88CF95275207BE0031A888 /* LaunchScreen.storyboard in Resources */,
+				BE88CFDE275306C40031A888 /* mock_slides_GET.json in Resources */,
 				BE88CFBE2752082C0031A888 /* mock_pizzaList_GET.json in Resources */,
 				BE88CF92275207BE0031A888 /* Assets.xcassets in Resources */,
 				BE88CF90275207BD0031A888 /* Main.storyboard in Resources */,
@@ -269,9 +279,11 @@
 				BE88CF89275207BD0031A888 /* AppDelegate.swift in Sources */,
 				BE88CFBF2752082C0031A888 /* MockURLProtocol.swift in Sources */,
 				BE88CFBD2752082C0031A888 /* APIService.swift in Sources */,
+				BE88CFDC275223C20031A888 /* Slides.swift in Sources */,
 				BE88CFD827520C4E0031A888 /* PizzasService.swift in Sources */,
 				BE88CFD527520A7E0031A888 /* Pizzas.swift in Sources */,
 				BE88CFDA27520D470031A888 /* Endpoints.swift in Sources */,
+				BE88CFE0275309480031A888 /* SlidesService.swift in Sources */,
 				BE88CF8B275207BD0031A888 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
