@@ -71,6 +71,7 @@ final class MainView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .lightGray
         addSubviews()
         setupPanGesture()
         bind()
