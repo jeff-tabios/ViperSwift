@@ -8,4 +8,4 @@ RXSwift
 ObjectMapper
 Snapkit
 
-https://user-images.githubusercontent.com/52874288/143886213-3362b925-9038-4c2e-ae64-269adf04a301.mov
+https://user-images.githubusercontent.com/52874288/143964497-962f1a89-0377-4f99-8070-c90305174555.mov
