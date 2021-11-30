@@ -13,21 +13,36 @@ class MenuCell: UITableViewCell {
     
     lazy var container: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         view.layer.cornerRadius = 10
-        view.layer.shadowPath = UIBezierPath(rect: view.bounds).cgPath
+        view.layer.masksToBounds = false
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOffset = CGSize(width: 0, height: 3)
         view.layer.shadowRadius = 5
-        view.layer.shadowOffset = .zero
-        view.layer.shadowOpacity = 1
+        return view
+    }()
+    
+    lazy var wrapper: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 10
         view.layer.masksToBounds = true
         return view
     }()
     
     lazy var image: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.backgroundColor = .black
         return imageView
+    }()
+    
+    lazy var infoBg: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        
+        return view
     }()
     
     lazy var title: UILabel = {
@@ -66,7 +81,7 @@ class MenuCell: UITableViewCell {
 
         self.addSubviews()
         backgroundColor = .clear
-        layer.masksToBounds = true
+        layer.masksToBounds = false
     }
     
     required init?(coder: NSCoder) {
@@ -75,10 +90,12 @@ class MenuCell: UITableViewCell {
     
     func addSubviews() {
         self.contentView.addSubview(container)
-        container.addSubview(image)
-        container.addSubview(title)
-        container.addSubview(price)
-        container.addSubview(addButton)
+        container.addSubview(wrapper)
+        wrapper.addSubview(image)
+        wrapper.addSubview(infoBg)
+        wrapper.addSubview(title)
+        wrapper.addSubview(price)
+        wrapper.addSubview(addButton)
         
         setNeedsUpdateConstraints()
     }
@@ -92,6 +109,10 @@ class MenuCell: UITableViewCell {
             make.center.equalToSuperview()
         }
         
+        wrapper.snp.remakeConstraints { (make) -> Void in
+            make.edges.equalToSuperview()
+        }
+        
         image.snp.remakeConstraints { (make) -> Void in
             make.width.equalToSuperview()
             make.height.equalTo(230)
@@ -99,8 +120,14 @@ class MenuCell: UITableViewCell {
             make.centerX.equalToSuperview()
         }
         
+        infoBg.snp.remakeConstraints { (make) -> Void in
+            make.bottom.equalToSuperview()
+            make.height.equalTo(60)
+            make.leading.trailing.equalToSuperview()
+        }
+        
         title.snp.remakeConstraints { (make) -> Void in
-            make.top.equalTo(image.snp.bottom).offset(20)
+            make.centerY.equalTo(infoBg)
             make.leading.equalTo(20)
         }
         

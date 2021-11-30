@@ -33,7 +33,13 @@ final class MainView: UIViewController {
         button.setImage(UIImage(named: "cartIcon"), for: .normal)
         button.layer.cornerRadius = 24
         button.setTitleColor(.white, for: .normal)
-
+        
+        button.layer.cornerRadius = 10
+        button.layer.masksToBounds = false
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.5
+        button.layer.shadowOffset = CGSize(width: 0, height: 3)
+        button.layer.shadowRadius = 5
         return button
     }()
     
@@ -71,7 +77,7 @@ final class MainView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .black
         addSubviews()
         setupPanGesture()
         bind()
